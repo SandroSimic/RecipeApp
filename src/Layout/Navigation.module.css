@@ -1,0 +1,64 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+.list-items {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 4rem;
+    font-weight: bold;
+}
+
+.list-items:hover{
+    cursor: pointer;
+}
+
+
+.actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.circle{
+    background-color: #F9FAFB;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .1s all;
+}
+
+.circle:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #eef0f1;
+}
+
+.circle > img{
+    width: 20px;
+    height: 20px;
+}
+
+.btn{
+    background-color: #eef0f1;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .1s all;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #eef0f1;
+}

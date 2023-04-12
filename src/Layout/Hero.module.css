@@ -1,0 +1,79 @@
+
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 5rem 15rem;
+}
+
+
+.hero-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.hungry{
+    font-weight: bold;
+    border: 2px solid black;
+    align-self: start;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.main-text{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.sub-text{
+    color: #A09FA1;
+}
+
+.actions{
+    display: flex;
+    gap: 5rem;
+}
+
+.orderBtn {
+    background-color: #84B74E;
+    color: white;
+    padding: 2rem 4rem 2rem 4rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .1s all;
+}
+
+.orderBtn:hover{
+    background-color: #75a244;
+}
+
+.exploreBtn {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .1s all;
+}
+
+.exploreBtn:hover span{
+    transition: .1s all;
+   margin-left: .5rem;
+}
+.exploreBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.imgHero{
+   height: 37.5rem;
+}
+
+.sub-text{
+    font-size: 17px;
+    width: 600px;
+    margin-bottom: 4rem;
+}
