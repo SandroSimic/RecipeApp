@@ -30,7 +30,7 @@
 
 .actions{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .orderBtn {
@@ -78,6 +78,12 @@
     font-size: 17px;
     width: 600px;
     margin-bottom: 4rem;
+}
+
+.heroItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -160,7 +166,7 @@
 
     
 .actions{
-    gap: 2.5rem;
+    gap: 2rem;
     align-self: center;
 }
 
