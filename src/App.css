@@ -13,5 +13,23 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+.aboutUsContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsContent > h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.aboutUsContent> p{
+    margin-bottom: 5rem;
+    padding: 0 3.5rem;
+    font-size: 1rem;
+    color: #ABABAD;
 }

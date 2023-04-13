@@ -1,0 +1,32 @@
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 2rem;
+}
+
+.aboutUs > h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.sub-text{
+    color: #ABABAD;
+}
+
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutItems{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+

@@ -25,7 +25,7 @@ const Navigation = () => {
             <li>Contact</li>
         </ul>
         <div className={classes.actions}>
-            <ActionCircle className={classes.circle} src={purse} alt="Purse"/>
+            <ActionCircle className={classes.circle} count={classes.count} src={purse} alt="Purse"/>
         </div>
         <div className={`${classes.hamburger} ${openNav ? classes.active : ''}`} onClick={openNavbarHandler}>
           <div className={classes['line-1']}></div>

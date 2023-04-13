@@ -1,3 +1,10 @@
+
+.responsiveNav{
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 10;
+}
+
 .listItems{
     display: none;
     flex-direction: column;
@@ -6,8 +13,7 @@
     text-decoration: none;
     list-style: none;
     background-color: #74a144; 
-    opacity: 0.95;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     justify-content: center;
@@ -48,5 +54,8 @@ li:hover::after{
 @media screen and (max-width: 900px) {
     .listItems{
         display: flex;
+        position: fixed;
+        overflow: hidden;
     }
+    
 }
