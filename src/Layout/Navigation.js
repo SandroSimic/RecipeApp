@@ -1,26 +1,41 @@
-import React from "react";
-import search from '../image/search.png'
+import React, { useState } from "react";
 import purse from '../image/purse.png'
 import classes from './Navigation.module.css'
 import ActionCircle from "../components/ActionCircle";
+import ResponsiveNav from "./ResponsiveNav";
 
 const Navigation = () => {
+
+  const [openNav, setOpenNav] = useState(false)
+
+  const openNavbarHandler = () => {
+    setOpenNav(!openNav)
+    console.log(openNav);
+  }
+
   return (
-    <nav className={classes.navigation}>
-        <h1 className={classes.logo}>FOODIE</h1>
-        <ul className={classes['list-items']}>
+    <>
+      {openNav && <ResponsiveNav active = 'classes.active'/>}
+        <nav className={classes.navigation}>
+        <h1 className={classes.logo}>FOODIED</h1>
+        <ul className={`${classes['list-items']}`}>
             <li>Home</li>
             <li>Menu</li>
             <li>About Us</li>
             <li>Contact</li>
         </ul>
         <div className={classes.actions}>
-            <ActionCircle className={classes.circle} src={search} alt="Search"/>
             <ActionCircle className={classes.circle} src={purse} alt="Purse"/>
             <button className={classes.btn}>Sign Up</button>
         </div>
-      
+        <div className={`${classes.hamburger} ${openNav ? classes.active : ''}`} onClick={openNavbarHandler}>
+          <div className={classes['line-1']}></div>
+          <div className={classes['line-2']}></div>
+          <div className={classes['line-3']}></div>
+        </div>
     </nav>
+       
+    </>
   );
 };
 

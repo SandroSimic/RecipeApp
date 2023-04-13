@@ -3,6 +3,41 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top: 1rem;
+    position: relative;
+}
+
+.openMenu{
+    color:#74a144;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    display: none;
+}
+
+.line-1{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
+
+
+.line-2{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
+
+
+.line-3{
+    height: 2px;
+    width: 20px;
+    background-color: black;
 }
 
 .logo:hover{
@@ -16,6 +51,41 @@
     list-style: none;
     gap: 4rem;
     font-weight: bold;
+}
+
+.list-items li{
+    position: relative;
+}
+
+.list-items li::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -.5rem;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease-out;
+}
+
+.list-items li:hover::before{
+    width: 100%;
+}
+
+.list-items li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease-out;
+}
+
+
+.list-items li:hover::after{
+    width: 100%;
 }
 
 .list-items:hover{
@@ -61,4 +131,61 @@
     cursor: pointer;
     transform: scale(1.1);
     background-color: #eef0f1;
+}
+
+@media screen and (max-width: 900px) {
+
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        transition: .3s all;
+        z-index: 1000;
+    }
+
+    .hamburger:hover{
+        transform: scale(1.1);
+    }
+    
+    .active{
+        margin-right: -8rem;
+    }
+
+
+    .active .line-2{
+        display: none;
+        transition: .1s ease-in-out;
+    }
+
+    
+    .active .line-1{
+        background-color: white;
+        transition: .1s ease-in-out;
+        transform: rotate(45deg) scale(2);
+
+    }
+
+    .active .line-3{
+        background-color: white;
+        transition: .1s ease-in-out;
+        transform: translateY(-6px) rotate(-45deg) scale(2);
+    }
+
+    .list-items{
+        display: none;
+    }
+
+    .btn{
+        background-color: #84B74E;
+        color: white;
+    }
+
+    .btn:hover{
+        background-color: #74a144;
+    }
+
+    .circle{
+        background-color: #d1d1d2;
+    }
 }

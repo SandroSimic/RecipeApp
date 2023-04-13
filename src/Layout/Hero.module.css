@@ -1,8 +1,8 @@
 
 .hero{
     display: flex;
-    align-items: center;
-    margin: 5rem 15rem;
+    flex-direction: row;
+    margin: 5rem 10rem;
 }
 
 
@@ -45,6 +45,7 @@
 }
 
 .orderBtn:hover{
+    cursor: pointer;
     background-color: #75a244;
 }
 
@@ -64,6 +65,7 @@
    margin-left: .5rem;
 }
 .exploreBtn:hover{
+    cursor: pointer;
     background-color: black;
     color: white;
 }
@@ -76,4 +78,100 @@
     font-size: 17px;
     width: 600px;
     margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hungry{
+        align-self: center;
+    }
+
+    .actions{
+        align-self:center;
+    }
+
+    .imgHero{
+        height: 25rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .main-text{
+        font-size: 1.5rem;
+    }
+
+    .sub-text{
+        font-size: 1rem;
+    }
+
+
+    .imgHero{
+        height: 25rem;
+    }
+
+    
+.orderBtn {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    border-radius: 50px;
+    font-size: .8rem;
+}
+
+.exploreBtn {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    font-size: .8rem;
+}
+}
+
+@media screen and (max-width: 900px) {
+    
+    .hero{
+        margin: 3rem 1.5rem;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+  
+    .hungry{
+        padding: 5px;
+        font-weight:500;
+        align-self: center;
+    }
+
+    .main-text{
+        font-size: 1.2rem;
+    }
+
+    .sub-text{
+        font-size: .9rem;
+    }
+
+
+    .imgHero{
+        height: 20rem;
+    }
+
+    
+.actions{
+    gap: 2.5rem;
+    align-self: center;
+}
+
+.orderBtn {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: .8rem;
+}
+
+.exploreBtn {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: .8rem;
+}
+
 }
