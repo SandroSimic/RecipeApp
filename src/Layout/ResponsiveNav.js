@@ -6,11 +6,8 @@ const ResponsiveNav = (props) => {
 
   return (  
    
-      <ul className={`${classes.listItems}`}>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About Us</li>
-        <li>Contact</li>
+    <ul className={`${classes.listItems}`}>
+        {props.children}
     </ul>
 
   

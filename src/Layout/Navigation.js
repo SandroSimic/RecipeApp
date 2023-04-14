@@ -15,14 +15,16 @@ const Navigation = () => {
 
   return (
     <>
-      {openNav && <ResponsiveNav active = 'classes.active'/>}
+      {openNav && <ResponsiveNav active = 'classes.active'>           <li>Home</li>
+            <li>Recipe</li>
+            <li>About Us</li>
+          </ResponsiveNav>}
         <nav className={classes.navigation}>
         <h1 className={classes.logo}>FOODIED</h1>
         <ul className={`${classes['list-items']}`}>
             <li>Home</li>
-            <li>Menu</li>
+            <li>Recipe</li>
             <li>About Us</li>
-            <li>Contact</li>
         </ul>
         <div className={classes.actions}>
             <ActionCircle className={classes.circle} count={classes.count} src={purse} alt="Purse"/>

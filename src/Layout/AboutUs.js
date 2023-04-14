@@ -4,6 +4,8 @@ import aboutUsImg1 from '../image/aboutUs-1.png'
 import aboutUsImg2 from '../image/aboutUs-2.png'
 import aboutUsImg3 from '../image/aboutUs-3.png'
 import AboutUsCard from "../components/AboutUsCard";
+import Heading1 from "../UI/Heading1";
+import SubText from "../UI/SubText";
 
 
 const aboutUsContent = [
@@ -28,10 +30,10 @@ const aboutUsContent = [
 const AboutUs = () => {
   return (
     <section className={classes.aboutUs}>
-        <h1>Why choose us?</h1>
-        <p className={classes['sub-text']}>You will choose us because you get the best quality food from us and we deliver fast.</p>
+        <Heading1 text="why choose us?"/>
+        <SubText text="You will choose us because you get the best quality food from us and we deliver fast."/>
         <div className={classes.aboutItems}>
-          {aboutUsContent.map(item => <AboutUsCard image={item.image} title={item.title} description={item.description}/>)}
+          {aboutUsContent.map(item => <AboutUsCard key={item.title} image={item.image} title={item.title} description={item.description}/>)}
         </div>
     </section>
   );

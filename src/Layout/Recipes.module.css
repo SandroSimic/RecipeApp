@@ -1,21 +1,13 @@
-.aboutUs{
+.specialRecipes{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 5rem 2rem;
 }
 
-.section-text{
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutItems{
+.recipe{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    margin: 5rem 0;
 }
-
