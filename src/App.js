@@ -11,12 +11,10 @@ import Recipes from "./Layout/Recipes";
 function App() {
   return (
     <div className="App">
-      <header className="header">
       <Navigation/>
       <Hero/>
       <AboutUs/>
       <Recipes/>
-      </header>
     </div>
   );
 }

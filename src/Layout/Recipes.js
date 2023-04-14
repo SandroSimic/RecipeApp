@@ -19,7 +19,7 @@ const Recipes = () => {
         setSpecialRecipe(data.recipes)
     }
 
-  return (<section className={classes.specialRecipes}>
+  return (<section className={classes.specialRecipes} id="recipe">
     <Heading1 text='Special Recipes!'/>
     <SubText text="Why not tryout some of our free recipes?"/>
     <div className={classes.recipe}>

@@ -42,7 +42,7 @@ const DUMMY_DATA = [
 const Hero = () => {
   return (
     <>
-    <section className={classes.hero}>
+    <section className={classes.hero} id="home">
         <div className={classes['hero-texts']}>
             <p className={classes.hungry}>Hungry?</p>
             <h1 className={classes['main-text']}>Just come to foodied & order</h1>

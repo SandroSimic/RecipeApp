@@ -3,6 +3,7 @@ import purse from '../image/purse.png'
 import classes from './Navigation.module.css'
 import ActionCircle from "../components/ActionCircle";
 import ResponsiveNav from "./ResponsiveNav";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
 
@@ -15,16 +16,17 @@ const Navigation = () => {
 
   return (
     <>
-      {openNav && <ResponsiveNav active = 'classes.active'>           <li>Home</li>
-            <li>Recipe</li>
-            <li>About Us</li>
+      {openNav && <ResponsiveNav active = {`classes.${openNav ? 'active' : ''}`}>           
+            <li><Link to="home" spy={true} smooth={true} offset={50} duration={500} onClick={openNavbarHandler}>Home</Link></li>
+            <li><Link to="recipe" spy={true} smooth={true} offset={50} duration={500} onClick={openNavbarHandler}>Recipe</Link></li>
+            <li><Link to="aboutUs" spy={true} smooth={true} offset={50} duration={500} onClick={openNavbarHandler}>About Us</Link></li>
           </ResponsiveNav>}
         <nav className={classes.navigation}>
         <h1 className={classes.logo}>FOODIED</h1>
         <ul className={`${classes['list-items']}`}>
-            <li>Home</li>
-            <li>Recipe</li>
-            <li>About Us</li>
+            <li><Link to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+            <li><Link to="recipe" spy={true} smooth={true} offset={50} duration={500}>Recipe</Link></li>
+            <li><Link to="aboutUs" spy={true} smooth={true} offset={-150} duration={500}>AboutUs</Link></li>
         </ul>
         <div className={classes.actions}>
             <ActionCircle className={classes.circle} count={classes.count} src={purse} alt="Purse"/>

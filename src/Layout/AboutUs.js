@@ -29,7 +29,7 @@ const aboutUsContent = [
 
 const AboutUs = () => {
   return (
-    <section className={classes.aboutUs}>
+    <section className={classes.aboutUs} id="aboutUs">
         <Heading1 text="why choose us?"/>
         <SubText text="You will choose us because you get the best quality food from us and we deliver fast."/>
         <div className={classes.aboutItems}>
