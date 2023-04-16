@@ -31,7 +31,7 @@ const Navigation = (props) => {
             <li><Link to="aboutUs" spy={true} smooth={true} offset={-150} duration={500}>AboutUs</Link></li>
         </ul>
         <div className={classes.actions}>
-            <ActionCircle className={classes.circle} count={classes.count} src={purse} alt="Purse"/>
+            <ActionCircle className={classes.circle} count={classes.count} src={purse} alt="Purse" onClick={props.onShowCart}/>
         </div>
         <div className={`${classes.hamburger} ${openNav ? classes.active : ''}`} onClick={openNavbarHandler}>
           <div className={classes['line-1']}></div>
