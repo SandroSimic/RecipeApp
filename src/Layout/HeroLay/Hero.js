@@ -1,12 +1,12 @@
 import React from "react";
 import classes from './Hero.module.css'
-import heroImg from '../image/hero.png'
-import Button from "../UI/Button";
-import HeroItems from "../components/HeroItems";
-import chickenBurgerImg from '../image/chickenBurger.jpg'
-import chickenPizzaImg from '../image/chickenPizza.jpg'
-import chickenRiceImg from '../image/chickenRice.jpg'
-import specialDessertImg from '../image/specialDessert.jpg'
+import heroImg from '../../image/hero.png'
+import Button from "../../UI/Button";
+import HeroItems from '../../components/HeroItems/HeroItems';
+import chickenBurgerImg from '../../image/chickenBurger.jpg'
+import chickenPizzaImg from '../../image/chickenPizza.jpg'
+import chickenRiceImg from '../../image/chickenRice.jpg'
+import specialDessertImg from '../../image/specialDessert.jpg'
 
 const DUMMY_DATA = [
     {

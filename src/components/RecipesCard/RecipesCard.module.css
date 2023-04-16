@@ -7,8 +7,8 @@
   position: relative;
   width: 400px;
   height: 600px;
+  margin-top: -5rem;
   border-radius: 40px;
-  margin: 5rem 2rem;
 }
 
 .textAndButtons{

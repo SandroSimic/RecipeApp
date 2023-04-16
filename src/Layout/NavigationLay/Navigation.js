@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import purse from '../image/purse.png'
+import purse from '../../image/purse.png'
 import classes from './Navigation.module.css'
-import ActionCircle from "../components/ActionCircle";
-import ResponsiveNav from "./ResponsiveNav";
+import ActionCircle from "../../components/ActionCircle";
+import ResponsiveNav from "../ResponsiveNavLay/ResponsiveNav";
 import { Link } from "react-scroll";
 
-const Navigation = () => {
+const Navigation = (props) => {
+  
+ 
 
   const [openNav, setOpenNav] = useState(false)
 

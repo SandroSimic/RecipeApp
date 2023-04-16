@@ -45,7 +45,7 @@ li::after{
     transition: width 0.2s ease-out;
 }
 
-li:hover::after{
+li:hover::after :not(.itemsName){
     width: 100%;
 }
 

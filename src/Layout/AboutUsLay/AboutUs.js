@@ -1,11 +1,11 @@
 import React from "react";
 import classes from './AboutUs.module.css'
-import aboutUsImg1 from '../image/aboutUs-1.png'
-import aboutUsImg2 from '../image/aboutUs-2.png'
-import aboutUsImg3 from '../image/aboutUs-3.png'
-import AboutUsCard from "../components/AboutUsCard";
-import Heading1 from "../UI/Heading1";
-import SubText from "../UI/SubText";
+import aboutUsImg1 from '../../image/aboutUs-1.png'
+import aboutUsImg2 from '../../image/aboutUs-2.png'
+import aboutUsImg3 from '../../image/aboutUs-3.png'
+import AboutUsCard from "../../components/AboutUs/AboutUsCard";
+import Heading1 from "../../UI/Heading1";
+import SubText from "../../UI/SubText";
 
 
 const aboutUsContent = [

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import classes from './Recipes.module.css'
-import Heading1 from "../UI/Heading1";
-import SubText from '../UI/SubText'
-import RecipesCard from "../components/RecipesCard";
+import Heading1 from "../../UI/Heading1";
+import SubText from '../../UI/SubText'
+import RecipesCard from "../../components/RecipesCard/RecipesCard";
 
 const Recipes = () => {
 
