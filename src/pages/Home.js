@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Cart from "../components/Cart/Cart";
 import classes from '../App.module.scss'
 import heroImg from '../assets/Screenshot_1-removebg-preview.png'
 import HeroItems from "../components/HeroItems";
@@ -6,6 +7,8 @@ import burgerImg from '../assets/DummyImg3.jpg'
 import pizzaImg from '../assets/DummyImg1.jpg'
 import riceImg from '../assets/DummyImg2.jpg'
 import dessertImg from '../assets/DummyImg4.jpg'
+import Navbar from "../components/Navbar";
+
 
 const DUMMY_DATA = [
   {
@@ -43,8 +46,22 @@ const DUMMY_DATA = [
 
 
 const Home = () => {
+
+  const [cartIsShow, setCartIsShown] = useState(false)
+
+  const showCartHandler = () => {
+    setCartIsShown(true)
+  }
+
+  const hideCartHandler = () => {
+    setCartIsShown(false)
+  };
+
+
   return (
     <>
+     {cartIsShow && <Cart onClose={hideCartHandler} />}
+      <Navbar onShowCart={showCartHandler}/>
       <section className={classes.home}>
         <div className={classes['home__texts']}>
           <h3>Hungry?</h3>
@@ -58,7 +75,7 @@ const Home = () => {
           <img src={heroImg} alt="heroPng"/>
     </section>
     <div className={classes['homeItems']}>
-    {DUMMY_DATA.map(item => <HeroItems id={item.id} image={item.image} name={item.name} description={item.description} price={item.price}/>)}
+    {DUMMY_DATA.map(item => <HeroItems key={item.id} id={item.id} image={item.image} name={item.name} description={item.description} price={item.price}/>)}
     </div>
   
     </>
